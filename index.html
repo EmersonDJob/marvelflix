@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.green.min.css">
+
+    
+    <title>MarvelFlix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">MarvelFlix</h1>
+            <nav>
+                <a href="">Inicio</a>
+                <a href="">Filmes</a>
+                <a href="">series</a>
+            </nav>
+        </div>
+    </header>
+    <header class="menu">
+            <button class="bars" id="btn-menu" onclick="ligar()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li class="nav-menu-link"> <a class="link-menu" href="">Inicio</a></li>
+                    <li class="nav-menu-link"> <a class="link-menu"href="">Filmes</a></li>
+                    <li class="nav-menu-link"> <a class="link-menu"href="">series</a></li>   
+                </ul>
+            </nav>    
+    </header>  
+    <main>
+        <div class="filme-principal"> 
+                <h2 class="titulo">Loki (2021)</h2>
+                <p class="descricao">Começando imediatamente depois que Loki rouba o Tesseract (de novo), ele se encontra diante da Autoridade de Variação Temporal, uma organização burocrática que existe fora do tempo e espaço. Forçado a responder por seus crimes contra a linha do tempo, ele recebe uma escolha: Ser deletado da realidade ou ajudar a capturar uma ameaça ainda maior.</p>
+               <div>
+                    <button class="btn " role="button">
+                        <i class="fas fa-play"></i>
+                        Assistir agora</button>
+                    <button class="btn" role="button">
+                        <i class="fas fa-info-circle"></i>
+                        Mais Informações
+                    </button>
+                </div>
+        </div>
+    </main>
+    
+   
+    <div class="carousel-movies">
+        <h3 class=" titulos">Filmes</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="itens">
+                <img src="img/carousel/panteranegra.jpg" alt="">
+                <h3>Pantera Negra</h3>
+            </div>
+            <div class="itens">
+                <img src="img/carousel/capitamarvel.jpg" alt="">
+                <h3>Capitã Marvel</h3>
+            </div>
+            <div class="itens">
+                <img src="img/carousel/thorRagnarok.jpg" alt="">
+                <h3>Thor Ragnarok</h3>
+            </div>
+            <div class="itens">
+                <img src="img/carousel/capitaoamerica.jpg" alt="">
+                <h3>Capital America</h3>
+            </div>     
+            <div class="itens">
+                <img src="img/carousel/drestranho.jpg" alt="">
+                <h3>Doutor Estranho</h3>
+            </div>     
+            <div class="itens">
+                <img src="img/carousel/homemdeferro2.jpg" alt="">
+                <h3>Homem de Ferro</h3>
+            </div>     
+                 
+        </div>
+    </div>
+    <div class="carousel-movies">
+        <h3 class=" titulos">Séries</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="itens">
+                <img src="img/carousel/lokiserie.jpg" alt="">
+                <h3>Loki</h3>
+            </div> 
+            <div class="itens">
+                <img src="img/carousel/WandaVision.jpg" alt="">
+                <h3>Wanda Vision</h3>
+            </div>
+            <div class="itens">
+                <img src="img/carousel/falcãoesoldadoinvernal.jpg" alt="">
+                <h3>Falcão e Soldado Invernal</h3>
+            </div>
+                
+            <div class="itens">
+                <img src="img/carousel/legion.jpg" alt="">
+                <h3>Legion</h3>
+            </div>     
+            <div class="itens">
+                <img src="img/carousel/justiceiro.jpg" alt="">
+                <h3>O Justiceiro</h3>
+            </div>     
+            <div class="itens">
+                <img src="img/carousel/demolidor.jpg"alt="">
+                <h3>O Demolidor</h3>
+            </div>     
+        </div>
+    </div>
+   
+    <script>
+        function ligar () {
+            let x = document.querySelector(".nav-menu")
+            if (x.style.display == 'none'){
+                x.style.display = 'block'
+            }else {
+                x.style.display = 'none'
+            }
+        }
+    </script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
+</body>
+</html>
